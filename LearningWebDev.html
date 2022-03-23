@@ -12,23 +12,56 @@ text-align: center;
 p{
 font-family: 'Roboto', sans-serif;
 font-size: 20px;
+
 }
 .booba-image{
 width: 400;
 height: auto;
+border-radius: 70%;
+border-color : violet;
+border-style : dashed;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: auto;
 }
 h2{
 font-family: 'Roboto', sans-serif;
 font-size: 40px;
 text-align:center ;
 }
-div{
+
+.social-media{
 border-radius: 20px;
 border-width: 1px;
 border-color: black;
 border-style: solid;
-width: 70%;	
-background: red;
+width: auto;	
+background: white;
+text-align: center;
+color: MediumSeaGreen;
+align: center;
+margin-top: 100px;
+}
+.socials{
+font-family: 'Roboto', sans-serif;
+font-size: 15px;
+color: violet;
+}
+.socials:hover{
+color: dodgerblue;
+animation-name: background-color;
+animation-duration: 1000ms;
+}
+
+@keyframes background-color{
+	100%{
+		background-color: orange ;
+		}
+	}
+}
+a:hover{
+color:pink;
 }
 </style>
 <main>
@@ -37,11 +70,15 @@ background: red;
 
 <p>Welcome to my first website!</p>
 <img class = "booba-image" src="https://cdn.discordapp.com/attachments/331409868693176320/955863447642447932/D1123DDE-EB77-48EE-B571-E44E98861CDC.jpg" width = "400" height="400" alt="A kitten sitting funny.">
-<div>
+<nav class = "social-media">
 <h2> These are some links to my social media! </h2>
-<p><a href="https://www.linkedin.com/in/andy-y-821078122/" target="_blank">Linkedin</a></p>
-<p><a href="https://github.com/ayin32" target="_blank">Github</a></p>
-</div>
+	<ul style="list-style: none;" >
+		<li><a href="https://www.linkedin.com/in/andy-y-821078122/" target="_blank" class = "socials">Linkedin</a></li>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png" width = "50" height = "50" alt = "linked in logo">	
+		<li><a href="https://github.com/ayin32" target="_blank" class = "socials">Github</a></li>
+		<img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width = "50" height = "50" alt = "github logo" >
+	</ul>
+</nav>
 </main>
 
 </html>
